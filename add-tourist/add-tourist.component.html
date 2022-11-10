@@ -1,0 +1,52 @@
+<div style="background-color: lightblue;">
+<div  class="col-md-2 offset-mid-3">
+    <div style="color:rgb(143, 30, 30)">
+<h3 style="margin-left: 250%;width: 100%;" >TOURIST DETAILS:</h3>
+</div>
+<body >
+    <div >
+<form  (ngSubmit) ="onSubmit()" style="margin-left: 250%;width: 100%;" >
+
+<div >
+    <label for="id" >Id</label>
+    <input  type="number" class="form-control border-success" id="id" [(ngModel)]="tourists.id" name="id" maxlength="4"  required>
+    
+</div>
+<div>
+    <label >FirstName</label>
+    <input type="text" class="form-control border-success" id="firstName" [(ngModel)]="tourists.firstName" name="firstName" maxlength="15" required  >
+</div>
+<div>
+    <label >LastName</label>
+    <input type="text" class="form-control border-success" id="lastName" [(ngModel)]="tourists.lastName" name="lastName" maxlength="12" required >
+</div>
+<div >
+<div  class="form-check">
+    <label >Gender : </label>
+    <br>
+   <label class="form-check form-check-inline"> Male<input type="radio"  id="gender" [(ngModel)]="tourists.gender" name="Male" maxlength="6"  value="male" ></label>
+   
+   <label class="form-check form-check-inline" >Female<input type="radio"  id="gender" [(ngModel)]="tourists.gender" name="Female" maxlength="6"  value="female" ></label>
+</div>
+</div>
+<div >
+    <label >Age</label>
+    <input type="number" class="form-control border-success" id="age" [(ngModel)]="tourists.age" name="age" maxlength="2" required  >
+</div>
+<div >
+    <label >FromPlace</label>
+    <input type="text" class="form-control border-success" id="fromPlace" [(ngModel)]="tourists.fromPlace" name="fromPlace" maxlength="15" required  >
+</div>
+<div>
+    <label >NumberOfDays</label>
+    <input type="number" class="form-control border-success" id="numberOfDays" [(ngModel)]="tourists.numberOfDays" name="numberOfDays" maxlength="15" required >
+</div>
+<div>
+    <br>
+    <button type="submit" class="btn btn-primary " >Submit</button>
+</div>
+</form>
+</div>
+</body>
+</div>
+</div>
